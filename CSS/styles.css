@@ -1,0 +1,298 @@
+
+/* ============= ELEMENT STYLES ============== */
+
+body {
+  background-color: #e0e0e0;
+  color: #444;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  background-color: #e0e0e0;
+}
+
+/* ================ NAV STYLES =============== */
+
+.main-header,
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  padding-top: .3em;
+  position: relative;
+}
+
+.name {
+  align-self: center;
+}
+
+.name a {
+  color: #444;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav a {
+  display: block;
+  margin: 4px;
+  padding: .85em;
+  color: #444;
+  background-color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+
+/* =============== HEADER STYLES ==============*/
+
+.profile-image {
+  width: 70%;
+}
+
+.about p {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+/* =============== PORTFOLIO STYLES ==============*/
+
+.portfolio {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-title {
+  font-size: 1em;
+  font-weight: 700;
+  background-color: #f9f9f9;
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.portfolio h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.portfolio p {
+  padding-bottom: 2em;
+  font-weight: 300;
+}
+
+img {
+  width: 90%;
+}
+
+/* =============== CONTACT STYLES ==============*/
+
+.contact h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* =============== FOOTER STYLES ==============*/
+
+.main-footer {
+  border-top: 1px solid #cecece;
+}
+
+.main-footer h1 {
+  float: left;
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.main-footer h3 {
+  float: right;
+  color: #444;
+  margin-top: 5px;
+  font-size: .85em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-footer a {
+  text-decoration: none;
+}
+
+.main-footer a:visited {
+  color: #444;
+}
+
+.footer-details {
+  margin: 10px;
+}
+
+.footer-large {
+  display: none;
+}
+
+/* =============== TABLET QUERIES =============== */
+
+@media (min-width: 768px) {
+  /* ================ NAV STYLES =============== */
+
+  .main-header {
+    height: 200px;
+    justify-content: flex-end;
+  }
+
+  .name {
+    margin-top: 2px;
+  }
+
+  .nav {
+    margin-top: 2em;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav a {
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+  }
+
+  /* =============== HEADER STYLES ==============*/
+
+  .header-2 {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+
+  .profile-image {
+    float: right;
+    max-width: 300px;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+  .about p {
+    max-width: 600px;
+    height: auto;
+    margin: auto 15px;
+    text-align: left;
+  }
+
+  /* =============== PORTFOLIO STYLES ==============*/
+
+  .portfolio {
+    margin-top: 0px;
+  }
+
+  .portfolio div {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .portfolio p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+/* =============== LARGE FOOTER STYLES ==============*/
+
+  .footer-details {
+    display: none;
+  }
+
+  .footer-large,
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-large {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+
+  .footer-name {
+    align-self: center;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  .footer-name a {
+    color: #444;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .footer-nav {
+    margin-top: 20px;
+    list-style: none;
+    padding-right: 0;
+    align-self: center;
+  }
+
+  .footer-nav a {
+    display: block;
+    margin: 4px;
+    padding: .85em;
+    color: #444;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 600;
+  }
+
+}
+
+/* =============== DESKTOP QUERIES =============== */
+
+@media (min-width: 1024px) {
+  .main-header {
+    flex-direction: row;
+  }
+
+  .nav {
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .nav li {
+    margin-left: .65em;
+    margin-right: .65em;
+  }
+
+  .name {
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  .about {
+    padding-left: 20px;
+  }
+
+  .profile-image {
+    max-width: 400px;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  .portfolio div {
+    width: 33%;
+  }
+}
