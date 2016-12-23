@@ -1,0 +1,98 @@
+/* =============== FOOTER STYLES ==============*/
+
+.main-footer {
+  border-top: 1px solid #cecece;
+
+    h1 {
+      float: left;
+      margin-top: 5px;
+      font-size: 1em;
+      font-weight: 900;
+    }
+
+    h3 {
+      float: right;
+      color: $text-color;
+      margin-top: 5px;
+      font-size: .85em;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: none;
+    }
+}
+
+
+.main-footer a:visited {
+  color: $text-color;
+}
+
+.footer-large,
+.footer-nav {
+  @media #{$brk-tablet} {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer-details {
+  margin: 10px;
+
+  @media #{$brk-tablet} {
+    display: none;
+  }
+}
+
+.footer-large {
+  display: none;
+
+  @media #{$brk-tablet} {
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+}
+
+.footer-name {
+  @media #{$brk-tablet} {
+    align-self: center;
+    margin-right: auto;
+    padding-left: 30px;
+  }
+
+  a {
+    @media #{$brk-tablet} {
+      color: $text-color;
+      font-size: 1.25em;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    }
+}
+
+
+.footer-nav {
+  @media #{$brk-tablet} {
+    margin-top: 20px;
+    list-style: none;
+    padding-right: 0;
+    align-self: center;
+  }
+
+  a {
+    @media #{$brk-tablet} {
+      display: block;
+      margin: 4px;
+      padding: .85em;
+      color: $text-color;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      font-weight: 600;
+    }
+  }
+}

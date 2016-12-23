@@ -1,0 +1,13 @@
+// Flex display for nav
+
+%nav-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+%footer-tab-display {
+    @media #{$brk-tablet} {
+      display: flex;
+      flex-direction: row;
+  }
+}
