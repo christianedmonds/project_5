@@ -1,0 +1,11 @@
+@mixin tablet {
+  @media #{$brk-tablet} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$brk-desk} {
+    @content;
+  }
+}

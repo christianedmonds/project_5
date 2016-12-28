@@ -31,7 +31,7 @@
 
 .footer-large,
 .footer-nav {
-  @media #{$brk-tablet} {
+  @include tablet {
     display: flex;
     flex-direction: row;
   }
@@ -40,7 +40,7 @@
 .footer-details {
   margin: 10px;
 
-  @media #{$brk-tablet} {
+  @include tablet {
     display: none;
   }
 }
@@ -48,7 +48,7 @@
 .footer-large {
   display: none;
 
-  @media #{$brk-tablet} {
+  @include tablet {
     height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -57,14 +57,14 @@
 }
 
 .footer-name {
-  @media #{$brk-tablet} {
+  @include tablet {
     align-self: center;
     margin-right: auto;
     padding-left: 30px;
   }
 
   a {
-    @media #{$brk-tablet} {
+    @include tablet {
       color: $text-color;
       font-size: 1.25em;
       font-weight: 600;
@@ -75,7 +75,7 @@
 
 
 .footer-nav {
-  @media #{$brk-tablet} {
+  @include tablet {
     margin-top: 20px;
     list-style: none;
     padding-right: 0;
@@ -83,7 +83,7 @@
   }
 
   a {
-    @media #{$brk-tablet} {
+    @include tablet {
       display: block;
       margin: 4px;
       padding: .85em;

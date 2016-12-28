@@ -14,28 +14,28 @@
     padding-bottom: 2em;
     font-weight: 300;
 
-    @media #{$brk-tablet} {
+    @include tablet {
       padding-left: 10px;
       padding-right: 10px;
     }
   }
 
   div {
-    @media #{$brk-tablet} {
+    @include tablet {
       display: inline-block;
       width: 50%;
     }
 
-    @media #{$brk-desk} {
+    @include desktop {
       width: 33%;
     }
   }
 
-  @media #{$brk-tablet} {
+  @include tablet {
     margin-top: 0px;
   }
 
-  @media #{$brk-desk} {
+  @include desktop {
     width: 100%;
   }
 }

@@ -5,12 +5,12 @@
   padding-top: .3em;
   position: relative;
 
-  @media #{$brk-tablet} {
+  @include tablet {
     height: 200px;
     justify-content: flex-end;
   }
 
-  @media #{$brk-desk} {
+  @include desktop {
     flex-direction: row;
   }
 }
@@ -18,11 +18,11 @@
 .name {
   align-self: center;
 
-  @media #{$brk-tablet} {
+  @include tablet {
     margin-top: 2px;
   }
 
-  @media #{$brk-desk} {
+  @include desktop {
     margin-right: auto;
     padding-left: 30px;
   }
@@ -56,25 +56,25 @@
     font-weight: 600;
 
     li {
-      @media #{$brk-desk} {
+      @include desktop {
         margin-left: .65em;
         margin-right: .65em;
       }
     }
 
-    @media #{$brk-tablet} {
+    @include tablet {
       background-color: $bkgd-color;
       padding: 10px 15px;
     }
   }
 
-  @media #{$brk-tablet} {
+  @include tablet {
     margin-top: 2em;
     flex-direction: row;
     justify-content: center;
   }
 
-  @media #{$brk-desk} {
+  @include desktop {
     margin-top: 0;
     align-self: center;
   }
