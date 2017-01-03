@@ -6,13 +6,28 @@ $bkgd-color  : #e0e0e0;
 $portfolio-bkgd-color : #f9f9f9;
 
 
-
-
 // Media Query breakpoints
 
 $brk-tablet : '(min-width: 768px)';
 $brk-desk   : '(min-width: 1024px)';
+$brk-mobile : '(max-width: 767px)';
 
 // Fonts
+$body-font : 'Source Sans Pro';
+$sans      : sans-serif;
 
-$sans   : sans-serif;
+// Font size
+
+$inherit  : 1em;
+$port-item-header : 1.5em;
+$nav-item : 1.5em;
+$head-text : 1.5em;
+$name     : 2em;
+
+
+// Font weight
+
+$heavy  : 900;
+$title  : 700;
+$light  : 600;
+$thin   : 300;

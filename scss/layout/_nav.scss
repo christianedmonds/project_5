@@ -29,8 +29,8 @@
 
   a {
     color: $text-color;
-    font-size: 2em;
-    font-weight: 700;
+    font-size: $name;
+    font-weight: $title;
     text-decoration: none;
   }
 }
@@ -49,11 +49,11 @@
     padding: .85em;
     color: $text-color;
     background-color: $portfolio-bkgd-color;
-    text-align: center;
+    @extend %centered;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 600;
+    font-size: $nav-item;
+    font-weight: $light;
 
     li {
       @include desktop {

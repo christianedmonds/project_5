@@ -5,7 +5,7 @@ body {
   background-color: $bkgd-color;
   color: $text-color;
   text-align: center;
-  font-family: 'Source Sans Pro', $sans;
+  font-family: $body-font, $sans;
 }
 
 header {

@@ -21,7 +21,7 @@
   }
 
   p {
-    font-size: 1.25em;
+    font-size: $head-text;
     font-weight: 400;
 
     @include tablet {

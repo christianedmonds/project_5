@@ -39,7 +39,7 @@ header {
 
 .portfolio-title {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 900;
   background-color: #f9f9f9;
   margin-top: 60px;
   margin-bottom: 0;
@@ -52,6 +52,13 @@ img {
 .main-header, .nav {
   display: flex;
   flex-direction: column; }
+
+@media (max-width: 767px) {
+  .footer-large, .footer-nav {
+    display: none; } }
+
+.nav a {
+  text-align: center; }
 
 /* =============== FOOTER STYLES ==============*/
 .main-footer {
@@ -74,26 +81,20 @@ img {
 .main-footer a:visited {
   color: #444; }
 
-@media (min-width: 768px) {
-  .footer-large,
-  .footer-nav {
-    display: flex;
-    flex-direction: row; } }
-
 .footer-details {
   margin: 10px; }
   @media (min-width: 768px) {
     .footer-details {
       display: none; } }
 
-.footer-large {
-  display: none; }
-  @media (min-width: 768px) {
-    .footer-large {
-      height: 40px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      position: relative; } }
+@media (min-width: 768px) {
+  .footer-large {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative; } }
 
 @media (min-width: 768px) {
   .footer-name {
@@ -109,6 +110,8 @@ img {
 
 @media (min-width: 768px) {
   .footer-nav {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
     list-style: none;
     padding-right: 0;
@@ -119,8 +122,8 @@ img {
     margin: 4px;
     padding: .85em;
     color: #444;
-    text-decoration: none;
     text-align: center;
+    text-decoration: none;
     text-transform: uppercase;
     font-size: 1.25em;
     font-weight: 600; } }
@@ -142,7 +145,7 @@ img {
   .about {
     padding-left: 20px; } }
 .about p {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 400; }
   @media (min-width: 768px) {
     .about p {
@@ -193,10 +196,9 @@ img {
     padding: .85em;
     color: #444;
     background-color: #f9f9f9;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 600; }
     @media (min-width: 1024px) {
       .nav a li {

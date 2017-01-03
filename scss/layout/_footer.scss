@@ -6,8 +6,8 @@
     h1 {
       float: left;
       margin-top: 5px;
-      font-size: 1em;
-      font-weight: 900;
+      font-size: $inherit;
+      font-weight: $heavy;
     }
 
     h3 {
@@ -15,7 +15,7 @@
       color: $text-color;
       margin-top: 5px;
       font-size: .85em;
-      font-weight: 900;
+      font-weight: $heavy;
       text-transform: uppercase;
     }
 
@@ -29,13 +29,6 @@
   color: $text-color;
 }
 
-.footer-large,
-.footer-nav {
-  @include tablet {
-    display: flex;
-    flex-direction: row;
-  }
-}
 
 .footer-details {
   margin: 10px;
@@ -46,9 +39,10 @@
 }
 
 .footer-large {
-  display: none;
-
+  @extend %footer-nav-hide;
   @include tablet {
+    display: flex;
+    flex-direction: row;
     height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -67,15 +61,18 @@
     @include tablet {
       color: $text-color;
       font-size: 1.25em;
-      font-weight: 600;
+      font-weight: $light;
       text-decoration: none;
     }
-    }
+  }
 }
 
 
 .footer-nav {
+  @extend %footer-nav-hide;
   @include tablet {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
     list-style: none;
     padding-right: 0;
@@ -88,11 +85,11 @@
       margin: 4px;
       padding: .85em;
       color: $text-color;
-      text-decoration: none;
       text-align: center;
+      text-decoration: none;
       text-transform: uppercase;
       font-size: 1.25em;
-      font-weight: 600;
+      font-weight: $light;
     }
   }
 }

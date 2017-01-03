@@ -5,9 +5,16 @@
   flex-direction: column;
 }
 
-%footer-tab-display {
-    @media #{$brk-tablet} {
-      display: flex;
-      flex-direction: row;
+%footer-nav-hide {
+    @include footer-none {
+      display: none;
   }
+}
+
+%footer-nav-display {
+  
+}
+
+%centered {
+  text-align: center;
 }
