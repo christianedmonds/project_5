@@ -1,7 +1,7 @@
 /* =============== FOOTER STYLES ==============*/
 
 .main-footer {
-  border-top: 1px solid #cecece;
+  border-top: 1px solid $border;
 
     h1 {
       float: left;
@@ -14,7 +14,7 @@
       float: right;
       color: $text-color;
       margin-top: 5px;
-      font-size: .85em;
+      font-size: $top-link;
       font-weight: $heavy;
       text-transform: uppercase;
     }
