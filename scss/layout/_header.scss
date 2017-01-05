@@ -22,7 +22,7 @@
 
   p {
     font-size: $head-text;
-    font-weight: 400;
+    font-weight: $stick;
 
     @include tablet {
       max-width: 600px;
